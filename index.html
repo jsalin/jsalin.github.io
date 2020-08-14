@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio - Jussi Salin</title>
+<style>
+	body 
+	{ 
+		background-color: #3f3f4f; 
+		padding: 32px 64px;
+		font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+	}
+	h1, h2, h3 { color: #ffffff; margin: 0;}
+	p { color: #dfdfdf; }
+	div { background-color: #4f4f5f; margin-bottom: 16px; padding: 16px; max-width: 1100px; }
+	a { color: #afafff; }
+	img, iframe { padding: 8px; background-color: #dfdfdf; }
+</style>
+</head>
+<body>
+	<!-- A special div for just text about my background -->
+	<div style="background-color: #3f3f4f; padding: 0 0 16px 0;">
+		<!--<img src="me.jpg" style="float:left; padding: 16px;"/>-->
+	<h1>Portfolio - Jussi Salin</h1>
+	<p>
+		GitHub: <a href="https://github.com/jsalin/">jsalin</a><br/>
+		Thingiverse: <a href="https://www.thingiverse.com/jsalin/">jsalin</a><br/>
+		E-mail: <a href="mailto:salinjus@gmail.com">salinjus@gmail.com</a>
+	</p>
+		<p>I'm a software developer from Finland, with 8+ years experience in a few companies. During studies and sometimes while having some free time I have done some own projects since I was a kid. On this portfolio I attempt to list some of the later personal projects, as what I've been involved in with the companies is usually a secret.</p>		
+	</div>
+	<div>
+		<h3>Cat rover</h3>
+		<p>A three wheel droid that can be remote controlled over the Internet with just a web browser. It sends back image with help of a webcam, has switchable front light for use in dark, and it has a switchable laser pointer that can be used for playing with cats.</p>
+		<p>The project was interesting because while nothing new I never made such a droid myself. Also besides a cgi-bin version I made also a node.js backend to get into more modern web programming.</p>
+		<p>On hardware level interesting is that I used arduino instead of a raspberry pi, yet had it available on the Internet. Everything possible was done to save on battery life, and I was able to make it have a 5 day standby time. It can be left in a house alone unplugged and during a 5 day window it is possible to wirelessly turn it on and start using full features, which consume a lot more power.</p>
+		<p>
+			3D designs: <a href="https://www.thingiverse.com/thing:1419221">thing:1419221 on Thingiverse</a><br/>
+			Source code: <a href="https://github.com/jsalin/catrover">jsalin/catrover on GitHub</a>
+		</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/xc64QnlGCRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div>
+		<h3>DosBox IPX gateway to real machine</h3>
+		<p>A simple program that acts as a gateway between DosBox emulator's IPX tunneling protocol and a real physical IPX network. This lets you to play old multiplayer games so that one computer can be a real retro computer and the other one can be a modern PC running just DosBox emulator and this gateway.</p>
+		<p>Besides being a simple refresher for some Unix style C programming, it involved sending and reading raw packets on ethernet level, which is interesting.</p>
+		<p>
+			Source code: <a href="https://github.com/jsalin/ipxgw">jsalin/ipxgw on GitHub</a>
+		</p>
+	</div>
+	<div>
+		<h3>"Eflute"</h3>
+		<p>A MIDI controller that resembles playing with a flute. The shape is 3D printed and it has a pressure sensor for air flow from mouth piece. Fingers are detected with capasitance on metal surfaces that resemble the holes on a flute. Hardware is a standard Arduino and the software sends MIDI commands either to a real MIDI port with help of a couple resistors, or to the USB serial port for a computer. The idea, designs and code are by me. I made it when I was trying out a real flute and found out there were only a few really expensive products available from companies to make a flute go electric. :)</p>
+		<p>
+			3D designs: <a href="https://www.thingiverse.com/thing:1411062">https://www.thingiverse.com/thing:1411062</a><br/>
+			Source code: <a href="https://github.com/jsalin/eflute">jsalin/eflute on GitHub</a>
+		</p>
+		<img src="eflute.jpg"/>
+	</div>
+	<div>
+		<h3>Software for ESP8266 "modem"</h3>
+		<p>ESP8266 is basically a small MCU board with integrated Wi-Fi chip, and when coming from the manufacturer the default software on it emulates a standard serial port modem with the standard AT command set + some extra. It seemed a good try for getting some old retro computers "online", like a C64, Amiga or an old PC with just serial port. There are still some telnet BBS'es on the Internet that work with old terminal programs, or you could connect to your own modern computer for transferring some files wirelessly to an old computer.</p>
+		<p>It turned out the default firmware was rather poor for anything else than really basic use, so I made a better modem/telnet emulator using Arduino IDE for ESP8266 programming. I got it as far as stable "high" speed file transfers using zmodem, telnet BBS'es working well, and even Doom multiplayer game between two DOS laptops was working Ok. It seems I was not the only one with the idea as there are more such projects for the ESP8266 in existence now.</p>
+		<p>
+			Source code: <a href="https://github.com/jsalin/esp8266_modem">jsalin/esp8266_modem on GitHub</a>
+		</p>
+	</div>
+	<div>
+		<h3>3D design and printing</h3>
+		<p>I had a few years spree, when I did a lot of 3D pring using a Welleman K8200 built from a kit, and later some upgrades applied. I sometimes needed also something specific that I had to design/draw myself, and did so using SolidWorks. The designs are available on my <a href="https://www.thingiverse.com/jsalin/">thingiverse profile</a>.</p>
+	</div>
+	<div>
+		<h3>Past activities before university</h3>
+		<p>During elementary and vocational schools I spent a lot of time programming small games and some demos on PC of the time. Mostly direct VGA graphics on DOS with Turbo Pascal 3.0 or QuickBasic 4.5 with some x86 assembler code and libraries to access a sound card. One friend who was also into programming was great to do some projects with. The actual resolution was good enough to be thumbnails these days. :)</p>
+		<img src="cmp.png"/>
+		<img src="skitime.png"/>
+		<img src="nibbles.png"/>
+		<img src="sub1.png"/>
+		<img src="sub2.png"/>
+		<img src="sub3.png"/>
+		<img src="race.png"/>		
+	</div>
+	<p>© 2020 Jussi Salin</p>
+</body>
+</html>
